@@ -12,19 +12,16 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * All SQL lives here (JDBC + MySQL, driver: com.mysql.cj.jdbc.Driver).
- * The database and tables are created automatically on first run.
- */
+
 public class Database {
 
-    // ===== CHANGE THESE to match your MySQL server =====
+   
     private static final String DB_URL = "jdbc:mysql://localhost:3306/voting_db"
         + "?createDatabaseIfNotExist=true&useSSL=false"
         + "&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String DB_USER = "admin";
     private static final String DB_PASSWORD = "1234";   
-    // ===================================================
+   
 
     private Connection conn;
 
